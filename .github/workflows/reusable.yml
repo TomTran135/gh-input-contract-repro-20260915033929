@@ -1,0 +1,9 @@
+name: reusable
+on:
+  workflow_call:
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo \"variant A\"
