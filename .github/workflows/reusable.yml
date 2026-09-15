@@ -5,9 +5,12 @@ on:
       differentParam:
         required: false
         type: string
+      customFlavor:
+        required: false
+        type: string
 
 jobs:
   sample:
     runs-on: ubuntu-latest
     steps:
-      - run: echo \"variant B\"
+      - run: echo \"flavor=${{ inputs.customFlavor }}\" 
