@@ -1,0 +1,7 @@
+trigger: none
+pool:
+  vmImage: ubuntu-latest
+steps:
+- template: templates/step-file.yml
+  parameters:
+    customFlavor: "vanilla"
