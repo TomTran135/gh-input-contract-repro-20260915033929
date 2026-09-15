@@ -1,9 +1,13 @@
 name: reusable
 on:
   workflow_call:
+    inputs:
+      differentParam:
+        required: false
+        type: string
 
 jobs:
   sample:
     runs-on: ubuntu-latest
     steps:
-      - run: echo \"variant A\"
+      - run: echo \"variant B\"
