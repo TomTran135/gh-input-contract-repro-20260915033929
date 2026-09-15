@@ -1,2 +1,7 @@
+parameters:
+- name: differentParam
+  type: string
+  default: "default"
+
 steps:
-- script: echo "template A loaded"
+- script: echo "template B loaded"
